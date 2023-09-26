@@ -7,53 +7,51 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat.startActivity
 import com.example.myapp.databinding.ActivitySignInBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 
 class Sign_In : AppCompatActivity() {
     private lateinit var binding: ActivitySignInBinding
     private lateinit var firebaseAuth: FirebaseAuth
-}
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        binding = ActivitySignInBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        firebase = FirebaseAuth.getInstance()
-
+        firebaseAuth = FirebaseAuth.getInstance()
         binding.textView.setOnClickListener {
             val intent = Intent(this, Sign_up::class.java)
             startActivity(intent)
-        }
+            binding.Button.setOnClickListener {
 
-        binding.Button.setOnClickListener {
-            binding.progressBar2.visibility = View.VISIBLE
-            val emaili = binding.email.text.toString()
-            val pass = binding.password.text.toString()
-            if (emaili.isNotEmpty() && pass.isNotEmpty()) {
+                val emaili = binding.email.text.toString()
+                val pass = binding.password.text.toString()
+                if (emaili.isNotEmpty() && pass.isNotEmpty()) {
 
 
-                firebaseAuth.signInWithEmailAndPassword(emaili, pass).addOnCompleteListener {
-                    if (it.isSuccessful) {
-                        val intent = Intent(this, MainActivity::class.java)
-                        startActivity(intent)
-                    } else {
-                        Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
+                    firebaseAuth.signInWithEmailAndPassword(emaili, pass).addOnCompleteListener {
+                        if (it.isSuccessful) {
+                            val intent = Intent(this, MainActivity::class.java)
+                            startActivity(intent)
+                        } else {
+                            Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
 
+                        }
                     }
+                } else {
+                    Toast.makeText(this, "Empty Fields Are not Allowed !!", Toast.LENGTH_SHORT).show()
+
                 }
-            } else {
-                Toast.makeText(this, "Empty Fields Are not Allowed !!", Toast.LENGTH_SHORT).show()
-
+                //binding.progressBar2.visibility = View.GONE
             }
-            //binding.progressBar2.visibility = View.GONE
         }
-    }
-/*           override fun onStart(){
-       super.onStart()
-       if(firebaseAuth.currentUser != null){
-           val intent = Intent(this, MainActivity::class.java)
-           startActivity(intent)
-       }
+        /*           override fun onStart(){
+               super.onStart()
+               if(firebaseAuth.currentUser != null){
+                   val intent = Intent(this, MainActivity::class.java)
+                   startActivity(intent)
+               }
 
-   }*/
-}
+           }*/
+    }}
