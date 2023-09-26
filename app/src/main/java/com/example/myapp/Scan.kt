@@ -134,7 +134,9 @@ class Scan : AppCompatActivity() {
 
         }, ContextCompat.getMainExecutor(this))}
 
-    private fun requestPermissions() {}
+    private fun requestPermissions() {
+        activityResultLauncher.launch(REQUIRED_PERMISSIONS)
+    }
 
     private fun allPermissionsGranted() = REQUIRED_PERMISSIONS.all {
         ContextCompat.checkSelfPermission(
