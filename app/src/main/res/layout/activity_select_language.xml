@@ -6,4 +6,89 @@
     android:layout_height="match_parent"
     tools:context=".Select_Language">
 
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="592dp"
+        android:layout_height="147dp"
+        android:layout_marginBottom="112dp"
+        android:text="Tamil "
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="592dp"
+        android:layout_height="147dp"
+        android:layout_marginBottom="172dp"
+        android:text="Telugu"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="592dp"
+        android:layout_height="147dp"
+        android:layout_marginBottom="120dp"
+        android:text="Gujarati"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="592dp"
+        android:layout_height="147dp"
+        android:layout_marginBottom="144dp"
+        android:text="Hindi"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="592dp"
+        android:layout_height="147dp"
+        android:layout_marginBottom="128dp"
+        android:text="Bengali"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="592dp"
+        android:layout_height="147dp"
+        android:layout_marginBottom="160dp"
+        android:text="Marathi"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="1005dp"
+        android:layout_height="252dp"
+        android:text="Select Language"
+        android:textSize="130sp"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.625" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
