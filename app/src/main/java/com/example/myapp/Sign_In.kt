@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import androidx.core.content.ContextCompat.startActivity
 import com.example.myapp.databinding.ActivitySignInBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -22,19 +21,21 @@ class Sign_In : AppCompatActivity() {
         firebaseAuth = FirebaseAuth.getInstance()
         binding.textView.setOnClickListener {
             val intent = Intent(this, Sign_up::class.java)
-            startActivity(intent)
+            startActivity(intent)}
             binding.Button.setOnClickListener {
 
                 val emaili = binding.email.text.toString()
                 val pass = binding.password.text.toString()
                 if (emaili.isNotEmpty() && pass.isNotEmpty()) {
 
-
-                    firebaseAuth.signInWithEmailAndPassword(emaili, pass).addOnCompleteListener {
-                        if (it.isSuccessful) {
-                            val intent = Intent(this, MainActivity::class.java)
+                    firebaseAuth.signInWithEmailAndPassword(emaili,pass).addOnCompleteListener {
+                        if (it.isSuccessful){
+                            Toast.makeText(this, "hiiiiii", Toast.LENGTH_SHORT).show()
+                            val intent = Intent(this@Sign_In, Home::class.java)
                             startActivity(intent)
-                        } else {
+                        }
+
+                      else {
                             Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
 
                         }
@@ -54,4 +55,4 @@ class Sign_In : AppCompatActivity() {
                }
 
            }*/
-    }}
+    }

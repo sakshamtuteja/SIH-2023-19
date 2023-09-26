@@ -23,12 +23,12 @@ class Sign_up : AppCompatActivity() {
             val intent = Intent(this, Sign_In::class.java)
         startActivity(intent)
         }
-        binding.button.setOnLongClickListener {
+        binding.button.setOnClickListener {
             binding.progressBar3.visibility = View.VISIBLE
             val emaili =binding.email.text.toString()
             val pass = binding.password.text.toString()
             val confirmpass = binding.repassword.text.toString()
-       if(emaili.isNotEmpty() && pass.isNotEmpty() && confirmpass.isNotEmpty()) ({
+       if(emaili.isNotEmpty() && pass.isNotEmpty() && confirmpass.isNotEmpty()) {
            if (pass == confirmpass){
                firebaseAuth.createUserWithEmailAndPassword(emaili,pass).addOnCompleteListener {
                    if (it.isSuccessful) {
@@ -40,9 +40,9 @@ class Sign_up : AppCompatActivity() {
                }}else{
                Toast.makeText(this, "Password is Not matching", Toast.LENGTH_SHORT).show()
            }
-       }) as Boolean else({
+       }else{
             Toast.makeText(this, "Empty Fields are not allowed", Toast.LENGTH_SHORT).show()
-        })as Boolean}
+        }}
         }
         }
 
