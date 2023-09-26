@@ -23,12 +23,12 @@ class Home : AppCompatActivity() {
             }
 
                 var button = findViewById<Button>(R.id.button)
-                button3.setOnClickListener {
+                button.setOnClickListener {
                     val intent = Intent(this, Scan::class.java)
                     startActivity(intent)
                 }
 
-        var button2 = findViewById<Button>(R.id.button3)
+        var button2 = findViewById<Button>(R.id.button2)
         button2.setOnClickListener {
             val intent = Intent(this,Upload::class.java)
             startActivity(intent)
