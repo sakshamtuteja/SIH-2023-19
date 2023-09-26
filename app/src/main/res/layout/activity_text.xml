@@ -6,4 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".Text">
 
+    <EditText
+        android:id="@+id/textinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#50ffffff"
+        android:drawablePadding="25dp"
+        android:hint="Type Your Text Here"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+   android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/findbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textinput" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
