@@ -28,7 +28,7 @@ class Home : AppCompatActivity() {
                     startActivity(intent)
                 }
 
-        var button2 = findViewById<Button>(R.id.button3)
+        var button2 = findViewById<Button>(R.id.button2)
         button2.setOnClickListener {
             val intent = Intent(this,Upload::class.java)
             startActivity(intent)
