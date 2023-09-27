@@ -13,7 +13,7 @@
         android:orientation="horizontal">
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/inputImagebtn"
+            android:id="@+id/request_permission_button"
             android:layout_width="match_parent"
             android:layout_weight="1"
             app:icon="@drawable/baseline_add_a_photo_24"
