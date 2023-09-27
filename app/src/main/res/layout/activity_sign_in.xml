@@ -120,6 +120,7 @@
         android:layout_marginStart="28dp"
         android:layout_marginTop="460dp"
         android:background="@drawable/rectangle_3"
+        android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -129,9 +130,9 @@
         android:layout_height="16dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="32dp"
 
-        android:layout_marginTop="512dp"
+        android:layout_marginTop="496dp"
         android:fontFamily="@font/inter_bold"
         android:gravity="top"
         android:text="password"
@@ -148,6 +149,7 @@
         android:layout_marginStart="28dp"
         android:layout_marginTop="528dp"
         android:background="@drawable/rectangle_3"
+        android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
