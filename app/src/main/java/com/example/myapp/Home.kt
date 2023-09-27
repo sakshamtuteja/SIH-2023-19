@@ -24,7 +24,7 @@ class Home : AppCompatActivity() {
 
                 var button = findViewById<Button>(R.id.button)
                 button.setOnClickListener {
-                    val intent = Intent(this, Scan::class.java)
+                    val intent = Intent(this, camera::class.java)
                     startActivity(intent)
                 }
 
