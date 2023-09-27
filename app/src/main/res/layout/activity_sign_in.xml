@@ -8,6 +8,17 @@
 
     android:background="#0070CC"
     tools:context=".Sign_up">
+    <View
+        android:id="@+id/rectangle_8"
+        android:layout_width="430dp"
+        android:layout_height="871dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/rectangle_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 
     <TextView
@@ -28,16 +39,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.585" />
 
-    <View
-        android:id="@+id/rectangle_8"
-        android:layout_width="430dp"
-        android:layout_height="871dp"
-        android:layout_marginTop="56dp"
-        android:background="@drawable/rectangle_8"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/image_1"
@@ -111,18 +112,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <View
-        android:id="@+id/rectangle_3"
-        android:layout_width="370dp"
-        android:layout_height="39dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="460dp"
-        android:background="@drawable/rectangle_3"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/password1"
@@ -132,7 +121,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="32dp"
 
-        android:layout_marginTop="496dp"
+        android:layout_marginTop="508dp"
         android:fontFamily="@font/inter_bold"
         android:gravity="top"
         android:text="password"
@@ -140,7 +129,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <View
+    <!--<View
         android:id="@+id/rectangle_4"
         android:layout_width="370dp"
         android:layout_height="39dp"
@@ -151,10 +140,10 @@
         android:background="@drawable/rectangle_3"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" />-->
 
     <TextView
-        android:id="@+id/don_t_have_"
+        android:id="@+id/textView"
         android:layout_width="237dp"
         android:layout_height="20dp"
         android:layout_alignParentLeft="true"
@@ -168,6 +157,18 @@
         android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <!--<View
+        android:id="@+id/rectangle_3"
+        android:layout_width="370dp"
+        android:layout_height="39dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="460dp"
+        android:background="@drawable/rectangle_3"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" /-->>
 
     <EditText
         android:id="@+id/email"
@@ -178,7 +179,9 @@
         android:background="#50ffffff"
 
         android:drawablePadding="20dp"
+        android:inputType="text"
         android:hint="Email"
+        android:textSize="20sp"
         android:padding="20dp"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
@@ -187,8 +190,9 @@
         app:layout_constraintHorizontal_bias="0.619"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signin"
-        app:layout_constraintVertical_bias="0.065"
+        app:layout_constraintVertical_bias="0.069"
         tools:ignore="TouchTargetSizeCheck" />
+
 
     <EditText
         android:id="@+id/password"
@@ -201,6 +205,7 @@
         android:drawablePadding="20dp"
         android:hint="Password"
         android:inputType="textPassword"
+        android:textSize="20sp"
         android:padding="20dp"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
@@ -222,8 +227,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView"
+   <!-- <TextView
+        android:id="@+id/s"
         android:layout_width="266dp"
         android:layout_height="33dp"
         android:gravity="center"
@@ -236,7 +241,7 @@
         app:layout_constraintHorizontal_bias="0.634"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Button"
-        app:layout_constraintVertical_bias="0.786" />
+        app:layout_constraintVertical_bias="0.786" />-->
 
     <ProgressBar
         android:id="@+id/progressBar2"
@@ -250,6 +255,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Button"
         app:layout_constraintVertical_bias="1.0" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
