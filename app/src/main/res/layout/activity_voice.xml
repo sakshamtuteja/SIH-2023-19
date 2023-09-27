@@ -7,7 +7,7 @@
     android:background="@color/black_shade_1"
     android:layout_height="match_parent"
     tools:context=".Voice"
-    style="@style/AppTheme.MaterialTheme"
+
     >
 
 
