@@ -34,14 +34,15 @@
         android:layout_marginTop="20dp">
 
         <Spinner
+            android:id="@+id/idFromSpinner"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/idFromSpinner"
             android:layout_margin="3dp"
-            android:padding="3dp"
+            android:layout_weight="1"
             android:gravity="center"
-            />
+            android:padding="3dp"
+
+            tools:ignore="TouchTargetSizeCheck" />
 
         <ImageView
             android:layout_width="0dp"
@@ -53,14 +54,14 @@
             />
 
         <Spinner
+            android:id="@+id/idToSpinner"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/idToSpinner"
-            android:padding="3dp"
-            android:gravity="center"
             android:layout_margin="3dp"
-            />
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="3dp"
+            tools:ignore="TouchTargetSizeCheck" />
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>
@@ -137,6 +138,15 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Translate Text"
+        android:text="Translated Text"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/yellow"
+        android:textSize="18sp"
+        android:id="@+id/idTVTranslatedTV"
+
+        />
 
 </LinearLayout>
