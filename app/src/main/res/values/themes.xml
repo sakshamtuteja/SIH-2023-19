@@ -13,11 +13,8 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
-
-    <style name="AppTheme.MaterialTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
-        <item name="windowNoTitle">true</item>
-        <item name="windowActionBar">false</item>
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryDark">@color/purple_200 </item>
+    <style name="getting_sta">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#000000</item>
     </style>
 </resources>
