@@ -34,7 +34,7 @@ typealias LumaListener = (luma: Double) -> Unit
 
 
 
-class   Scan : AppCompatActivity() {
+class Scan : AppCompatActivity() {
     private lateinit var viewBinding: ActivityScanBinding
 
     private var imageCapture: ImageCapture? = null
