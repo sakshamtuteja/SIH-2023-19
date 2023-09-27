@@ -15,6 +15,11 @@ class Upload : AppCompatActivity() {
             val Intent = Intent(this,Text::class.java)
             startActivity(Intent)
         }
+        val imageopen = findViewById<Button>(R.id.imagebtn)
+        imageopen.setOnClickListener {
+            val Intent = Intent(this,Text::class.java)
+            startActivity(Intent)
+        }
 
 
 
