@@ -10,7 +10,7 @@ class Upload : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_upload)
 
-        val wordopen = findViewById<Button>(R.id.wordbutton)
+        val wordopen = findViewById<Button>(R.id.text)
         wordopen.setOnClickListener {
             val Intent = Intent(this,Text::class.java)
             startActivity(Intent)

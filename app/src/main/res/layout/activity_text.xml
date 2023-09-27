@@ -4,7 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0070CC"
     tools:context=".Text">
+
+    <View
+        android:id="@+id/rectangle_2"
+        android:layout_width="414dp"
+        android:layout_height="720dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/rectangle_8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/textinput"
@@ -16,20 +28,71 @@
         android:padding="10dp"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
-   android:textSize="22sp"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29"
+        android:inputType="textImeMultiLine"
+        />
 
     <Button
-        android:id="@+id/findbutton"
+        android:id="@+id/translatebutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Find"
+        android:text="Translate"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textinput" />
+        app:layout_constraintTop_toBottomOf="@+id/textinput"
+        app:layout_constraintVertical_bias="0.184" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="104dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Spinner
+            android:id="@+id/idFromSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="3dp"
+
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/ic_right_arrow"
+
+            app:tint="@color/black" />
+
+        <Spinner
+            android:id="@+id/idToSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="3dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
