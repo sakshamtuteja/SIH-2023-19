@@ -29,9 +29,7 @@
         <activity
             android:name=".camera"
             android:exported="false" />
-        <activity
-            android:name=".Image"
-            android:exported="false" />
+
         <activity
             android:name=".Scan"
             android:exported="false" />
@@ -40,6 +38,9 @@
             android:exported="false" />
         <activity
             android:name=".Voice"
+            android:exported="false" />
+        <activity
+            android:name=".Image"
             android:exported="false" />
         <activity
             android:name=".Text"
