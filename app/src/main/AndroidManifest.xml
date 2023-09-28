@@ -51,13 +51,12 @@
             android:name=".Select_Language"
             android:exported="false" />
         <activity
+            android:name=".Upload"
+            android:exported="false" />
+        <activity
             android:name=".Home"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
            <!-- <intent-filter>
         <action android:name="android.intent.action.MAIN" />
 
@@ -67,13 +66,15 @@
         <activity
             android:name=".Sign_up"
             android:exported="false" />
-        <activity
-            android:name=".Upload"
-            android:exported="false" />
+
         <activity
             android:name=".Sign_In"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity"
